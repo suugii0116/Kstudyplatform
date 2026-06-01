@@ -2126,6 +2126,10 @@ body.dark-mode .visa-checklist-item.completed {
     backdrop-filter: blur(20px);
   }
 
+  body.dark-mode .nav-links {
+    background: rgba(9, 13, 22, 0.95);
+  }
+
   .navbar.open .nav-links {
     display: flex;
   }
