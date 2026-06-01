@@ -1335,6 +1335,13 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute('aria-expanded', 'false');
       });
     }
+
+    // Close mobile nav when clicking outside of nav container or nav toggle
+    if (navbar && navbar.classList.contains('open')) {
+      if (!event.target.closest('.nav-container') && !event.target.closest('#nav-toggle')) {
+        closeMobileNav();
+      }
+    }
   });
 
   document.addEventListener('keydown', (event) => {

@@ -2156,29 +2156,13 @@ body.dark-mode .visa-checklist-item.completed {
 
 @media (max-width: 600px) {
   .services-grid {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 16px;
-    padding-bottom: 8px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-  }
-
-  .services-grid::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .services-grid::-webkit-scrollbar-thumb {
-    background: rgba(99, 102, 241, 0.35);
-    border-radius: 999px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .service-card {
-    min-width: 85vw;
-    flex: 0 0 85vw;
-    scroll-snap-align: start;
+    width: 100%;
   }
 
   .service-image-wrapper {
@@ -2230,7 +2214,6 @@ body.dark-mode .visa-checklist-item.completed {
   }
 
   .nav-links {
-    display: flex;
     flex-direction: column;
     width: 100%;
     gap: 12px;
