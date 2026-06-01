@@ -2198,19 +2198,33 @@ body.dark-mode .visa-checklist-item.completed {
   .nav-container {
     flex-wrap: wrap;
     height: auto;
-    padding: 10px 0;
-    gap: 10px;
+    padding: 8px 0;
+    gap: 8px;
+    align-items: center;
   }
 
   .nav-logo {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
+    max-width: 70%;
+  }
+
+  .logo-meta h1 {
+    font-size: 18px;
+  }
+
+  .logo-meta span {
+    display: none;
+  }
+
+  .nav-toggle {
+    margin-left: auto;
   }
 
   .nav-actions {
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
   }
 
   .nav-links {
